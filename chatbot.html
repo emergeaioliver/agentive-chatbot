@@ -2,6 +2,20 @@
 <html>
 <head>
   <title>Agentive Chatbot</title>
+  <style>
+    /* Remove default margins and padding */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      overflow: hidden;
+    }
+    /* Ensure the root div fills the iframe */
+    #root {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <!-- Chatbot Container -->
@@ -19,8 +33,8 @@
         }
         if (window.myChatWidget && typeof window.myChatWidget.load === 'function') {
           window.myChatWidget.load({
-            assistantId: 'cb561e7d-50ac-4645-ae01-d3529406352c',
-            apiKey: 'eead2e9f-13f1-4612-9ccb-134163f64635',
+            assistantId: '387160b9-b970-4d8e-996c-10a106f334a8', // Your new assistant ID
+            apiKey: 'c47d1646-1172-4e21-8411-85718f4ed541', // Replace with your actual API key
           });
         }
       };
